@@ -1,7 +1,8 @@
+import './Tab.css';
 const Tab = (props) =>  {
     return (
         <>
-            <div class="Tab">{props.name}</div>
+            <div class="tab">{props.name}</div>
         </>
     );
 }
