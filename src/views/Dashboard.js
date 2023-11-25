@@ -1,12 +1,15 @@
-import Header from './Header';
-import StudentInfo from './StudentInfo';
-import CourseList from './CourseList';
-function Dashboard() {
+import StudentInfo from '../components/StudentInfo.js';
+import CourseList from '../components/CourseList.js';
+import './Dashboard.css';
+
+const Dashboard = () => {
     return (
         <>
-            <Header></Header>
-            <StudentInfo></StudentInfo>
-            <CourseList></CourseList>
-        </>        
+            <div class="dashboard">
+                <StudentInfo></StudentInfo>
+                <CourseList></CourseList>
+            </div>
+        </>
     );
 }
+export default Dashboard;

@@ -1,12 +1,16 @@
 import Logo from './Logo.js';
 import Tabs from './Tabs.js';
 import Icons from './Icons.js';
-function Header() {
+import './Header.css';
+const Header = () => {
     return(
         <>
-            <Logo />
-            <Tabs />
-            <Icons />
+            <div class="header">
+                <Logo />
+                <Tabs />
+                <Icons />
+            </div>
         </>
     );
 }
+export default Header;

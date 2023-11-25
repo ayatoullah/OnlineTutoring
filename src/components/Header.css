@@ -1,0 +1,5 @@
+.header {
+    padding:40px;
+    display: grid;
+    grid-template-areas: "logo tabs tabs icons";
+}
