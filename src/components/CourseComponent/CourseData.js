@@ -1,10 +1,6 @@
 
 import React, { useState } from 'react'
-<<<<<<< HEAD:src/components/CourseComponent/CourseData.js
 import './CourseData.css';
-=======
-import '../../views/Course.css';
->>>>>>> 4fdec6a37ce356d5211462b95741f4cd11d37253:src/CourseView/CourseData.js
 import { course } from './courseItem.js'
 import right_arrow from '../../assets/icons/right_arrow.svg'
 
