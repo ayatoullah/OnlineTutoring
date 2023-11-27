@@ -1,15 +1,20 @@
 import './App.css';
-import CourseData from './CourseView/CourseData';
-import CourseParticipants from './CourseView/CourseParticipants';
-import Courses from './CourseView/Courses';
+import CourseData from './components/CourseComponent/CourseData';
+import Header from "./components/Header.js";
+import Dashboard from "./views/Dashboard.js";
+import Chatbot from "./components/Chatbot.js";
+import CourseParticipants from './components/CourseComponent/CourseParticipants';
+import Courses from './views/Course.js';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 function App() {
   return (
-    <BrowserRouter>
-      
+    <div className="App">
+   <BrowserRouter>
+      <Header />
       <Routes>
+        <Route path="" element={<Dashboard />} />
         <Route path="courses" element={<Courses />}>
             <Route index element={<CourseData />} />
             <Route path="coursedata" element={<CourseData/>}/>
@@ -18,6 +23,9 @@ function App() {
       </Routes>
   
     </BrowserRouter> 
+      <Chatbot />
+
+    </div>
   );
 }
 

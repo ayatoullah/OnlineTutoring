@@ -1,0 +1,6 @@
+.header {
+    padding:40px 40px 30px 40px;
+    display: grid;
+    grid-template-areas: "logo tabs usermenu";
+    border-bottom: 2px solid #c7c7c8;
+}

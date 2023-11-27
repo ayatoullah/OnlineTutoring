@@ -1,0 +1,10 @@
+.chatbot-container {
+    position:fixed;
+    width: 200px;
+    height: 133px;
+    bottom:0;
+    right:0;
+}
+.img {
+    max-width: 100%;
+}

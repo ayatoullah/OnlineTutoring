@@ -1,6 +1,6 @@
 import React from 'react'
-import './Courses.css';
-import {course} from './course.js'
+import './CourseParticipants.css';
+import {course} from './courseItem.js'
 
 
 
@@ -11,7 +11,7 @@ const CourseParticipants = () => {
       <ul className='student-list-parent'>
         {students.map((student) => (
           <li className='student-list-item' key={student.studentId}>
-            <img src={student.profilePic} className='student-image'/>
+            <img alt='student profile pic'src={student.profilePic} className='student-image'/>
             <p>{student.studentName}</p>
           </li>
          ))}
