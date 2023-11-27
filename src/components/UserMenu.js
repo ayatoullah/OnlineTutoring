@@ -5,11 +5,11 @@ import Expand from '../assets/icons/expand.svg';
 const UserMenu = () => {
     return (
         <>
-            <div class="user-container">
-                <div class="avatar">
+            <div className="user-container">
+                <div className="avatar">
                     <img src={Avatar} alt="your pic"/>
                 </div>
-                <div class="expand-arrow">
+                <div className="expand-arrow">
                     <img src={Expand} alt="user menu"/>
                 </div>
             </div>

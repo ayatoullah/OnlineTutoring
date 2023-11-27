@@ -3,7 +3,8 @@ import './CourseList.css';
 const CourseList = () => {
     return (
         <>
-         <div class="courses-container">
+         <div className="courses-container">
+            <Course/>
             <Course/>
             <Course/>
             <Course/>
