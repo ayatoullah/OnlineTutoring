@@ -11,20 +11,18 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-   <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="" element={<Dashboard />} />
-        <Route path="courses" element={<Courses />}>
-            <Route index element={<CourseData />} />
-            <Route path="coursedata" element={<CourseData/>}/>
-            <Route path="participants" element={<CourseParticipants/>} />
-        </Route>
-      </Routes>
-  
-    </BrowserRouter> 
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="" element={<Dashboard />} />
+          <Route path="courses" element={<Courses />}>
+              <Route index element={<CourseData />} />
+              <Route path="coursedata" element={<CourseData/>}/>
+              <Route path="participants" element={<CourseParticipants/>} />
+          </Route>
+        </Routes>
+      </BrowserRouter> 
       <Chatbot />
-
     </div>
   );
 }
