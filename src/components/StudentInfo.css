@@ -1,0 +1,21 @@
+.student-info {
+    text-align: left;
+    padding-bottom: 3rem;
+}
+.student-name {
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    font-weight:700 ;
+}
+.description {
+    font-family: Roberto-Medium;
+    font-size: 20px;
+}
+.date {
+    font-family: Roberto-Thin;
+    font-size: 10px;
+    color:gray;
+}
+p{
+    margin:3px;
+}

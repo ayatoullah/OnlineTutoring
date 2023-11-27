@@ -1,0 +1,8 @@
+.logo {
+    grid-area: logo;
+    width:112px;
+    height:55px;
+}
+img {
+    max-width: 100%;
+}
