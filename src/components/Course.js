@@ -1,7 +1,10 @@
 import './Course.css';
 import more from '../assets/icons/more.svg';
+import {useNavigate} from 'react-router-dom';
 
 const Course = () => {
+    let navigate = useNavigate();
+    const goToCourseDetails = () => navigate("/courses/coursedata");
     return(
         <>
             <div className="course-container">
@@ -13,7 +16,9 @@ const Course = () => {
                     <div className="course">Enterprise Application Engineering</div>
                     <div className="semester">Winter Term 2023/24</div>
                 </div>
-                <div className="start">Get Started</div>
+                <div className="start" onClick={goToCourseDetails}>
+                    Get Started
+                </div>
             </div>
         </>
     );
