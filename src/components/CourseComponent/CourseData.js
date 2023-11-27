@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import '../../views/Course.css';
+import './CourseData.css';
 import { course } from './courseItem.js'
 import right_arrow from '../../assets/icons/right_arrow.svg'
 
