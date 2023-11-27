@@ -1,9 +1,9 @@
 import React from 'react'
-import CourseNavbar from './CourseNavbar'
-import './Courses.css';
-import {course} from './course.js'
+import CourseNavbar from '../components/CourseComponent/CourseNavbar.js'
+import './Course.css';
+import {course} from '../components/CourseComponent/courseItem.js'
 
-const Courses = () => {
+const Course = () => {
   return (
       <div className='container'>
           <h1 className='child_1'>{course.courseName}</h1>
@@ -17,4 +17,4 @@ const Courses = () => {
   )
 }
 
-export default Courses
+export default Course

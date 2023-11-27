@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react'
-import './Courses.css';
-import right_arrow from './right_arrow.svg';
-import {course} from './course.js'
+import '../../views/Course.css';
+import { course } from './courseItem.js'
+import right_arrow from '../../assets/icons/right_arrow.svg'
 
 
 

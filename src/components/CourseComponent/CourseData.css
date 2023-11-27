@@ -1,0 +1,44 @@
+
+
+.materials-assignment-header {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+.arrow {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+  
+.materials-assignment-heading{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 0px;
+    text-align: left;
+}
+.item-class  {
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+    margin: 5px;
+    margin-left: 0px;
+    border-radius: 5px;
+    border: 3px solid #eeeeee;    
+    color: #0f6cbf;
+    font-size: 0.75rem;
+    text-align: left;
+
+}
+.item-class:hover{
+    text-decoration: underline;
+    color: #008196;
+
+}
+.item-parent {
+    margin: 0px;
+    padding: 0px;
+    padding-right: 10%;
+}
+

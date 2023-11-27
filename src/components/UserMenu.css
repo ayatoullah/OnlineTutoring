@@ -1,0 +1,17 @@
+.user-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    grid-area: usermenu;
+}
+.avatar {
+    width:40px;
+    height:40px;
+}
+img{
+    border-radius: 50%;
+    max-width: 100%;
+}
+.expand-arrow {
+    align-self: center;
+}

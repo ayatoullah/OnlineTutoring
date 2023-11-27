@@ -1,0 +1,8 @@
+.dashboard {
+    padding:40px;
+    /* display:grid;
+    grid-template-areas: 
+        "studentinfo studentinfo studentinfo"
+        "courses";
+    grid-template-columns: 1fr 1fr 1fr; */
+}
