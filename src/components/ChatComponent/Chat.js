@@ -23,7 +23,6 @@ const Chat = () => {
       setMessages([...messages, newMessage]);
       setInputValue(''); // Clear the input field after adding the message
     }
-    console.log(messages);
   };
 
 
