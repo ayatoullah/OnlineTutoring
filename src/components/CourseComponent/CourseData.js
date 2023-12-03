@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import './CourseData.css';
 import { course } from './courseItem.js'
 import right_arrow from '../../assets/icons/right_arrow.svg'
