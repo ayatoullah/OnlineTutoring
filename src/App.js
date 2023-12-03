@@ -6,9 +6,18 @@ import Chatbot from "./components/Chatbot.js";
 import CourseParticipants from './components/CourseComponent/CourseParticipants';
 import Courses from './views/Course.js';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useState } from 'react';
+import Chat from './components/ChatComponent/Chat.js';
+
 
 
 function App() {
+
+  const [isDivVisible, setDivVisibility] = useState(false);
+  const handleToggleClick = () => {
+      setDivVisibility(!isDivVisible);
+  };
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -22,7 +31,13 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter> 
-      <Chatbot />
+
+      <div onClick={handleToggleClick}>
+        <Chatbot/>
+      </div>
+        {isDivVisible && (
+          <div><Chat/></div>
+        )}
     </div>
   );
 }

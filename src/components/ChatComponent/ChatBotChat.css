@@ -1,0 +1,27 @@
+/* bot chat design */
+.bot{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+}
+.bot .icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid #5F5BFF;
+}
+.bot .botMessage{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    background: #5F5BFF;
+    color: white;
+    margin-left: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10px;
+    flex:1;
+    text-align: start;
+    max-width: 80%;
+}
