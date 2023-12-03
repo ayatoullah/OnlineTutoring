@@ -14,7 +14,7 @@ const UserChat = (props) => {
                 <div className="userMessage">
                     <p>{message}</p>
                 </div>
-            </div>
+        </div>
     )
 }
 

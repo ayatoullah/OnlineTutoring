@@ -13,9 +13,9 @@ import Chat from './components/ChatComponent/Chat.js';
 
 function App() {
 
-  const [isDivVisible, setDivVisibility] = useState(false);
+  const [divVisible, setDivVisible] = useState(false);
   const handleToggleClick = () => {
-      setDivVisibility(!isDivVisible);
+    setDivVisible(!divVisible);
   };
 
   return (
@@ -35,7 +35,7 @@ function App() {
       <div onClick={handleToggleClick}>
         <Chatbot/>
       </div>
-        {isDivVisible && (
+        {divVisible && (
           <div><Chat/></div>
         )}
     </div>
