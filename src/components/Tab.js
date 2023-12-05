@@ -6,7 +6,7 @@ const Tab = (props) =>  {
         <>
                 <div className="tab">
                     <span>{props.name}</span>
-                    <div class="dropdown-content">
+                    <div className="dropdown-content">
                         <p>Hello World!</p>
                     </div>
                 </div>

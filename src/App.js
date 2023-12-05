@@ -1,26 +1,16 @@
 import './App.css';
-import CourseData from './components/CourseComponent/CourseData';
-import Header from "./components/Header.js";
-import Dashboard from "./views/Dashboard.js";
-import Chatbot from "./components/Chatbot.js";
-import CourseParticipants from './components/CourseComponent/CourseParticipants';
-import Courses from './views/Course.js';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useState } from 'react';
-import Chat from './components/ChatComponent/Chat.js';
+import { BrowserRouter } from "react-router-dom";
+import AuthWrapper from './components/AuthWrapper.js';
 
 
 
 function App() {
 
-  const [divVisible, setDivVisible] = useState(false);
-  const handleToggleClick = () => {
-    setDivVisible(!divVisible);
-  };
+
 
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Header />
         <Routes>
           <Route path="" element={<Dashboard />} />
@@ -35,9 +25,12 @@ function App() {
       <div onClick={handleToggleClick}>
         <Chatbot/>
       </div>
-        {divVisible && (
-          <div><Chat/></div>
-        )}
+      {divVisible && (
+        <div><Chat/></div>
+      )} */}
+      <BrowserRouter>
+        <AuthWrapper/>
+      </BrowserRouter>
     </div>
   );
 }

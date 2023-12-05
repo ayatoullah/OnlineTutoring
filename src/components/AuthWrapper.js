@@ -1,18 +1,14 @@
 import { createContext, useState, useContext } from "react";
-import CourseData from './CourseComponent/CourseData';
-import Header from "./Header.js";
-import Dashboard from "../views/Dashboard.js";
-import Chatbot from "./Chatbot.js";
-import CourseParticipants from './CourseComponent/CourseParticipants';
-import Course from '../views/Course.js';
-import Chat from './ChatComponent/Chat.js';
-import { Route, Routes } from "react-router-dom";
+import Home from './Home';
+import { Routes, Route } from 'react-router-dom';
+import Login from './LoginComponent/Login';
+import PrivateRoute from "./PrivateRoute";
 
 const AuthContext = createContext();
 export const AuthData = () => useContext(AuthContext);
 
 const AuthWrapper = () => {
-    
+
     const [userData, setUserData] = useState({"username":"", "isAuthenticated":false});
 
     const login = (username, password) => {
@@ -32,31 +28,15 @@ const AuthWrapper = () => {
         setUserData({...userData, "isAuthenticated":false});
     }
 
-    const [divVisible, setDivVisible] = useState(false);
-    const handleToggleClick = () => {
-      setDivVisible(!divVisible);
-    };
 
     return (
         <AuthContext.Provider value={{userData, login, logout}}>
-            <>
-                <Header />
-                <Routes>
-                <Route path="" element={<Dashboard />} />
-                <Route path="courses" element={<Course />}>
-                    <Route index element={<CourseData />} />
-                    <Route path="coursedata" element={<CourseData/>}/>
-                    <Route path="participants" element={<CourseParticipants/>} />
+            <Routes>
+                <Route path="/login" element={<Login/>}/>
+                <Route path="" element={<PrivateRoute/>}>
+                    <Route path="" element={<Home/>}/>
                 </Route>
-                </Routes>
-
-                <div onClick={handleToggleClick}>
-                    <Chatbot/>
-                </div>
-                {divVisible && (
-                    <div><Chat/></div>
-                )}
-            </>
+            </Routes>
         </AuthContext.Provider>
     );
 }
