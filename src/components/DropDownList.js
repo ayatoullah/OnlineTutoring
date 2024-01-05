@@ -6,7 +6,7 @@ const Tab = (props) =>  {
         <>
                 <div className="dropdown">
                     {props.name ?? <span>{props.name}</span>}
-                    <div class="dropdown-content">
+                    <div className="dropdown-content">
                         {choices.map( x => (<p>{x}</p>))}
                     </div>
                 </div>
